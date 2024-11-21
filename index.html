@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menú de Navegación con Submenús</title>
+    <style>
+        .menu {
+            background-color: coral;
+
+            padding: 10px;
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .menu li {
+            position: relative;
+            margin-right: 20px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        .menu a:hover {
+            background-color: #3f0d0d;
+        }
+
+        .menu li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li:hover ul {
+            display: block;
+        }
+        .menu li ul li {
+            margin: 0;
+        }
+        .menu li ul a {
+            padding: 10px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="https://www.uv.mx">Inicio</a></li>
+            <li>
+                <a href="https://www.nvidia.com/es-mx/geforce-now/memberships/">Servicios</a>
+                <ul>
+                    <li><a href="https://www.xbox.com/es-MX">Microsoft</a></li>
+                    <li><a href="https://store.steampowered.com/?l=spanish">Store</a></li>
+                    <li><a href="https://www.xbox.com/es-MX/games/store/call-of-duty-black-ops-6-vault-edition/9PNKSTGVNPJH">cod</a></li>
+                </ul>
+            </li>
+            <li><a href="https://azure.microsoft.com/es-es/">Portafolio</a></li>
+            <li><a href="https://github.com/SeeS129">Contacto</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
